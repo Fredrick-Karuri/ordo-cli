@@ -23,7 +23,7 @@
 
 ## 1. Overview
 
-Ordo is a CLI tool that reads an `ordo.yaml` config, groups shell commands, and runs them via `ordo run group:command`. It has no daemon, no network, no state. Every invocation is stateless and self-contained.
+Ordo is a CLI tool that reads an `ordo.yaml` config, groups shell commands, and runs them via `ordo group:command`. It has no daemon, no network, no state. Every invocation is stateless and self-contained.
 
 ```
 ordo.yaml  →  Ordo CLI  →  sh -c "<run string>"
@@ -193,7 +193,7 @@ def discover(start: Path) -> Path:
 ## 6. Command Execution
 
 ```
-ordo run dev:start
+ordo dev:start
      │
      ├── parse "dev:start" → group="dev", command="start"
      ├── load config
@@ -253,7 +253,7 @@ When `group:command` is not found:
 ordo                        # shows help
 ordo list                   # list all commands
 ordo list --verbose         # list with raw run strings
-ordo run <group:command>    # execute a command
+ordo <group:command>        # execute a command
 ordo validate               # validate ordo.yaml
 ordo --version              # print version
 ordo --help                 # print help

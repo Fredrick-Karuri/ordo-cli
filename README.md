@@ -59,7 +59,7 @@ Then:
 
 ```bash
 ordo list          # see all commands
-ordo run dev:start # run one
+ordo dev:start     # run one
 ordo validate      # check your config
 ```
 
@@ -70,7 +70,7 @@ ordo validate      # check your config
 ```
 ordo list                     List all commands
 ordo list --verbose           Also show raw run strings
-ordo run <group:command>      Execute a command
+ordo <group:command>          Execute a command
 ordo validate                 Validate ordo.yaml
 ordo --version                Print version
 ordo --help                   Print help
