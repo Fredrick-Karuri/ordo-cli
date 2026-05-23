@@ -21,9 +21,9 @@ Ordo reads an `ordo.yaml` config, groups your commands logically, and runs them 
 ## Installation
 
 ```bash
-pip install ordo
+pip install ordo-cli
 # or
-pipx install ordo
+pipx install ordo-cli
 ```
 
 ---
