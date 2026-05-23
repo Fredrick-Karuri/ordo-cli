@@ -68,3 +68,6 @@ def validate_cmd(config_path):
     except Exception as e:
         click.echo(f"✗ {e}", err=True)
         sys.exit(1)
+
+if __name__ == "__main__":
+    main()
