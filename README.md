@@ -22,13 +22,22 @@ Ordo reads an `ordo.yaml` config, groups your commands logically, and runs them 
 
 **Standalone binary — no Python required:**
 
-Download the binary for your platform from the [latest release](https://github.com/fredrick-karuri/ordo/releases/latest) and put it on your PATH.
+Download the binary for your platform from the [latest release](https://github.com/fredrick-karuri/ordo/releases/latest), then:
 
-| Platform | File |
-|---|---|
-| macOS | `ordo-macos` |
-| Linux | `ordo-linux` |
-| Windows | `ordo-windows.exe` |
+```bash
+# macOS
+xattr -d com.apple.quarantine ~/Downloads/ordo-macos
+chmod +x ~/Downloads/ordo-macos
+sudo mv ~/Downloads/ordo-macos /usr/local/bin/ordo
+```
+
+```bash
+# Linux
+chmod +x ~/Downloads/ordo-linux
+sudo mv ~/Downloads/ordo-linux /usr/local/bin/ordo
+```
+
+> **macOS note:** The `xattr` step removes the quarantine flag macOS sets on downloaded binaries. This is standard for unsigned tools.
 
 **Via PyPI:**
 
